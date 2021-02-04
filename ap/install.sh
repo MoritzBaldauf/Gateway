@@ -26,6 +26,7 @@ if [ "$1" = "create_img" ]; then
     cp set_ssid /usr/local/rak/first_boot/
     systemctl enable create_ap
 else
+    chmod 744 set_ssid
     ./set_ssid
 fi
 
