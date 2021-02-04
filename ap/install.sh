@@ -31,3 +31,4 @@ else
 fi
 
 echo_success "Install ap success!"
+clear
