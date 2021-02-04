@@ -90,7 +90,7 @@ INSTALL_LTE=1
 
 apt update
 pushd rak
-chmod 744 install.sh
+chmod 777 install.sh
 ./install.sh $CREATE_IMG
 sleep 1
 popd
@@ -99,7 +99,7 @@ write_json_chirpstack_install $INSTALL_CHIRPSTACK
 set -e
 
 pushd ap
-chmod 744 install.sh
+chmod 777 install.sh
 ./install.sh $CREATE_IMG
 sleep 1
 popd
@@ -112,13 +112,13 @@ if [ "$INSTALL_CHIRPSTACK" = 1 ]; then
 fi
 
 pushd lte
-chmod 744 install.sh
+chmod 777 install.sh
 ./install.sh $CREATE_IMG
 sleep 1
 popd
 
 pushd lora
-chmod 744 install.sh
+chmod 777 install.sh
 ./install.sh $CREATE_IMG
 sleep 1
 popd
@@ -129,7 +129,7 @@ if [ "$CREATE_IMG" = "create_img" ]; then
 fi
 
 pushd sysconf
-chmod 744 install.sh
+chmod 777 install.sh
 ./install.sh $CREATE_IMG
 sleep 1
 popd
