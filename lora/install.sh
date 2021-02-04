@@ -27,8 +27,10 @@ else
 fi
 
 if [ "$1" = "create_img" ]; then
+    chmod 744 install_for_img.sh
     ./install_for_img.sh
 else
+    chmod 744 install_normal.sh
     ./install_normal.sh
 fi
 
