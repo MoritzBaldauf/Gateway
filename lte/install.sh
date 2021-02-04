@@ -25,3 +25,4 @@ if [ "${INSTALL_LTE}" = "1" ] || [ "$1" = "create_img" ]; then
     echo_success "Install LTE module success!\n"
     sleep 2
 fi
+clear
