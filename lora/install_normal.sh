@@ -23,11 +23,7 @@ mkdir /opt/ttn-gateway -p
 
 if [ "${RAK_GW_MODEL}" = "RAK7243" ] || [ "${RAK_GW_MODEL}" = "RAK7244" ]; then
 	pushd rak2245
-	if [ "${INSTALL_LTE}" = "1" ]; then
-		cp global_conf_i2c global_conf -rf
-	else
-		cp global_conf_uart global_conf -rf
-	fi
+	chmod 744 install.sh
 	./install.sh
 	LORA_DIR_TMP=rak2245
 	popd
