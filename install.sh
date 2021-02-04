@@ -13,6 +13,14 @@ fi
 SCRIPT_COMMON_FILE=$(pwd)/rak/rak/shell_script/rak_common.sh
 source $SCRIPT_COMMON_FILE
 
+function do_set_spi_to_json()
+{
+    JSON_FILE=./rak/rak/rak_gw_model.json
+    
+    linenum=`sed -n "/spi/=" $JSON_FILE`
+    sed -i "${linenum}c\\\\t\"spi\": \"$1\"" $JSON_FILE
+}
+
 print_help()
 {
     echo "--help                Print help info."
@@ -80,6 +88,7 @@ JSON_FILE=./rak/rak/rak_gw_model.json
 RAK_GW_JSON=./rak/rak/gateway-config-info.json
 GW_MODEL=RAK7244
 INSTALL_LTE=1
+do_set_spi_to_json 1
 
     linenum=`sed -n "/gw_model/=" $JSON_FILE`
     sed -i "${linenum}c\\\\t\"gw_model\": \"$GW_MODEL\"," $JSON_FILE
