@@ -36,3 +36,5 @@ fi
 #sed -i "${linenum}c\\\\t\"gw_id\": \"$GW_ID\"," $JSON_FILE
 
 echo_success "Copy Rak file success!"
+clear
+
