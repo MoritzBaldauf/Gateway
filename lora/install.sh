@@ -33,4 +33,4 @@ else
     chmod 744 install_normal.sh
     ./install_normal.sh
 fi
-
+clear
