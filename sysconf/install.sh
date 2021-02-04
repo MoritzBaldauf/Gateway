@@ -39,6 +39,8 @@ cp motd /etc/motd -f
 CMD_STR=`cat /boot/cmdline.txt`
 echo "$CMD_STR modules-load=dwc2,g_ether" > /boot/cmdline.txt
 
+chmod 744 set_ip.sh
 ./set_ip.sh $img
 
 echo_success "Copy sys_config file success!"
+clear
