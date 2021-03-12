@@ -98,6 +98,7 @@ do_set_spi_to_json 1
 
 
 apt update
+sudo apt-get install apache2
 pushd rak
 chmod 777 install.sh
 ./install.sh $CREATE_IMG
