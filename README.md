@@ -1,5 +1,7 @@
 Adapted Version of the https://github.com/RAKWireless/rak_common_for_gateway for the usage of the RAK2013 and the RAK2245 together. 
 
+Note: The connection between RAK2245 and RAK2013 has to be as schown in Connection.png
+
 Installation: 
 
 sudo apt update
