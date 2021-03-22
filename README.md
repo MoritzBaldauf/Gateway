@@ -2,6 +2,7 @@ Adapted Version of the https://github.com/RAKWireless/rak_common_for_gateway for
 
 Installation: 
 sudo apt update
+
 sudo apt install git
 git clone https://github.com/MoritzBaldauf/Gateway
 cd Gateway
