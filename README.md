@@ -16,8 +16,6 @@ cd Gateway
 
 sudo ./install.sh
 
-cd /usr/local/rak/bin
-
 cd lte
 
 sudo ./ppp-creator.sh
