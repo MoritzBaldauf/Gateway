@@ -1,14 +1,14 @@
 #!/bin/bash
 #**************************************************************************
-#*	Date:		18.03.2021							 																	    
-#*	Name:		Moritz Baldauf													   										
-#*	Hardware:	Raspberry Pi 3B+                                            
-#*            RAK2013                                                     
-#*            RAK2245  
+#*      Date:           18.03.2021							 																	    
+#*      Name:           Moritz Baldauf													   										
+#*      Hardware:       Raspberry Pi 3B+                                            
+#*                      RAK2013                                                     
+#*                      RAK2245  
 #*
-#*	Function: Establishes a connection trough sudo pppd call gprs.
-#*            The Message log is written in log.txt. 
-#*            If connection is built successful. 							
+#*      Function: Establishes a connection trough sudo pppd call gprs.
+#*                The Message log is written in log.txt. 
+#*                If connection is built successful. 							
 #*													   																							  
 #**************************************************************************
 
