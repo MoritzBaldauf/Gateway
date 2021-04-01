@@ -4,7 +4,8 @@
 #*	Name:		Moritz Baldauf													   										
 #*	Hardware:	Raspberry Pi 3B+                                            
 #*            RAK2013                                                     
-#*            RAK2245                                                     
+#*            RAK2245  
+#*
 #*	Function: Establishes a connection trough sudo pppd call gprs.
 #*            The Message log is written in log.txt. 
 #*            If connection is built successful. 							
