@@ -14,7 +14,7 @@
 statusvor=$(ps -A | grep pppd)
 #Checks if there is a ppp connection running
 if [[ -z $statusvor ]]; then
-#If there is no Connection return an Error
+#If there is no connection return an Error
         echo "Could not find any connection"
         exit;
 else
@@ -24,13 +24,13 @@ else
 fi
 
 statusnach=$(ps -A | grep pppd)
-#Check if there is still a Connection running
+#Check if there is still a connection running
 if [[ -z $statusnach ]]; then
-#If not the task was succesfull
+#If not the task was successful
         echo "Interent Connection has been stoped"
         echo "0"
 else
-#If ther is still a Connection return a Error Message  
+#If there is still a Connection return an Error Message  
         echo "Error when trying to stop Internet Connection"
         echo "1"
 fi
