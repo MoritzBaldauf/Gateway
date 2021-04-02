@@ -16,6 +16,7 @@ statusvor=$(ps -A | grep pppd)
 if [[ -z $statusvor ]]; then
 #If there is no connection return an Error
         echo "Could not find any connection"
+        echo "1"
         exit;
 else
 #Else close the connection
