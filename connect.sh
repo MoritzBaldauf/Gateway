@@ -19,7 +19,7 @@ status=$(ps -A | grep pppd)
 #and if so wirte it in $status
 if [[ -z $status ]]; then
 #Check if there is something written in $status If it is empty the
-#connection was no established wrong
+#connection was not established
         echo "Connection Error"
          echo "1"
  else
