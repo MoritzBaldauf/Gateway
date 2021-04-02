@@ -10,5 +10,21 @@
 #             returns a Message if successful. 							             
 #													   																							  
 #**************************************************************************
-sudo killall pppd 
-echo Connection closed 
+
+statusvor=$(ps -A | grep pppd)
+if [[ -z $statusvor ]]; then
+        echo "Keine Verbindung vorhanden"
+        exit;
+else
+        sudo systemctl stop rak-pppd
+        sleep 1
+fi
+
+statusnach=$(ps -A | grep pppd)
+if [[ -z $statusnach ]]; then
+        echo "Internetverbindung wurde beendet"
+        echo "0"
+else
+        echo "Internetverbindung konnte nicht beendet werden"
+        echo "1"
+fi
