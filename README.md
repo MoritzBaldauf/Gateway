@@ -28,8 +28,6 @@ sudo rm /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd/global_conf.json
 
 sudo cp global_conf.json /opt/ttn-gateway/packet_forwarder/lora_pkt_fwd       (global_conf.json is for the usage with the European frequencies)
 
-sudo systemctl disable rak-pppd
-
 sudo reboot
 
 sudo ifconfig wlan0 down 
