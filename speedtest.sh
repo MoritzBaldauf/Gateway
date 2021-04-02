@@ -23,6 +23,6 @@ else
 #get files from Github
         sudo install fast_linux_amd64 /usr/local/bin/fast
 #install the Files
-        echo "Files are now installed please run Speedtest again"
+        echo "Files are now installed please run Speed Test again"
 
 fi
